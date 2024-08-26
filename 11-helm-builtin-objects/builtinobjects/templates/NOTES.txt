@@ -1,0 +1,17 @@
+{{/* Root or Dot or Period Object */}}
+Root Object: {{ . }}
+
+Release Object: {{ .Release }}
+
+Chart Object: {{ .Chart }}
+
+Values Object: {{ .Values }}
+
+Capabilities Object: {{ .Capabilities }}
+
+Template Object: {{ .Template }}
+
+Files Object: {{ .Files }}
+
+File Example:
+{{ .Files.Get ".helmignore" }}
