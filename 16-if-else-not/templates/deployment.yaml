@@ -3,7 +3,11 @@ kind: Deployment
 metadata:
   name: myapp
 spec:
+{{- if not (eq .Values.myapp.env "dev")}}
+  replicas: 2
+{{- else }}
   replicas: 1
+{{- end }}
   selector:
     matchLabels:
       app: myapp
