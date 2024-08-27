@@ -1,0 +1,9 @@
+{{- $chartName := .Chart.Name }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-{{ $chartName }}-cm2
+data:
+{{- range $key, $val := .Values.myapps.config2 }}
+{{- $key | nindent 2}}: {{ $val }}-{{ $chartName }}
+{{- end }}

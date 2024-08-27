@@ -1,0 +1,11 @@
+myapps:
+  config1:
+    appName: app1
+    appType: webserver
+    appTech: HTML
+    appDB: mysql
+  config2:
+    appName: app2
+    appType: webserver
+    appTech: HTML
+    appDB: mysql
