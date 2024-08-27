@@ -1,0 +1,4 @@
+myapp:
+  env: dev
+  retail:
+    enableFeature: true
