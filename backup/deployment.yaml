@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: nginx
+        image: ghcr.io/stacksimplify/kubenginx:4.0.0
         resources:
           limits:
             memory: "128Mi"
