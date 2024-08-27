@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp
+  labels:
+{{- include "22-named-templates.labels" . }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: myapp
+        image: ghcr.io/stacksimplify/kubenginx:4.0.0
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
