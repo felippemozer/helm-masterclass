@@ -1,0 +1,9 @@
+dependencies:
+- name: mychart1
+  repository: https://stacksimplify.github.io/helm-charts/
+  version: 0.1.0
+- name: mychart2
+  repository: https://stacksimplify.github.io/helm-charts/
+  version: 0.4.0
+digest: sha256:4ece9048ac504c81f933fef3fe2c474b03f868f62fc508f459c9f0bbc0d8c08f
+generated: "2024-08-27T20:01:35.218285048-03:00"
