@@ -1,0 +1,9 @@
+namespaces:
+  - name: app1
+  - name: app2
+  - name: app3
+
+environments:
+  - name: dev
+  - name: qa
+  - name: prod
