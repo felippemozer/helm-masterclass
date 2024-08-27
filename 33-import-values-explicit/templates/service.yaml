@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "33-import-values-explicit.fullname" . }}
+  labels:
+    {{- include "33-import-values-explicit.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "33-import-values-explicit.selectorLabels" . | nindent 4 }}
