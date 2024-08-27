@@ -1,0 +1,12 @@
+podAnnotations:
+  appName: app
+  appType: webserver
+  appTech: HTML
+
+myapps:
+  data:
+    config:
+      appName: app
+      appType: webserver
+      appTech: HTMl
+      appDB: mysql
