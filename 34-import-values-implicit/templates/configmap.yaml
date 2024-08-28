@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "34-import-values-implicit.fullname" . }}-import-explicit
+data:
+  serviceType: {{ .Values.mychart4service.type }}
+  servicePort: {{ .Values.mychart4service.port | quote }}
+  imageRepository: {{ .Values.mychart4image.repository }}
+  imageTag: {{ .Values.mychart4image.tag | default .Chart.AppVersion }}
