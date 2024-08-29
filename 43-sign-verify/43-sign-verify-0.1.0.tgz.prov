@@ -1,0 +1,26 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+apiVersion: v2
+appVersion: 0.1.0
+description: A Helm chart for Kubernetes
+name: 43-sign-verify
+type: application
+version: 0.1.0
+
+...
+files:
+  43-sign-verify-0.1.0.tgz: sha256:b4f3ab587d1f5607b3ba154103f1c3c6645f95d76db6a69ee70ebe78816228f4
+-----BEGIN PGP SIGNATURE-----
+
+wsDcBAEBCgAQBQJm0PwYCRA9yBDNyETS4wAAS/0MABC/fGlJLtZEkK8E4zdYrTy0
+pcPrucXpK1Px6vMqqcDs2zTzVDyVjOrsa1tk+LyPgzYJI11IPuv9kR2pfJg33SUG
+HavcqXSsk3EwxtuAeQT07YqH+NpA4ZKfKXIi+6pyv5vahMaDBD05H44PvK1ZLC7b
+sRxfhcovP7JFbGB8IwPm1+SUsNbHK0RWBHnbNEfMQgP82JD5WC5fDdomTwYA+JkK
+1fygjmPt5RCa3gh6PdAm/ruDqTtTSngcwDuC22flPImPi2Me/AaOhEItzt8OOeUj
+H2N+0OnoUV+Ll45Sb/WCVaMlOr4rtJfs+MoimrWQkvpfWNmGT/QUu1LacOxLy/Kr
+5qk6bi8/a7Dt65OiQ2pzFz255ovyZDdB1I+rzUoPvtYxHTV6Ejbd1M/0UY+6EPpU
+mNsPch7ogZw16IGUIRyzjqtm70QltRKhbHBnRriZfDlXoh+52+90wB5mlgoS60rC
+xuKllscaPKizp9uhLZqd3/XKbyY54wOJVz5uT+aFZg==
+=OxHi
+-----END PGP SIGNATURE-----
