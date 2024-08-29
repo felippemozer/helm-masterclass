@@ -1,0 +1,6 @@
+dependencies:
+- name: mychart4
+  repository: https://stacksimplify.github.io/helm-charts/
+  version: 0.1.0
+digest: sha256:0a13d101446b1a51d056f3e6bdd8cac57c99ce756ef0649edd3fbb7870d1ca8e
+generated: "2024-08-29T17:24:30.624561916-03:00"
