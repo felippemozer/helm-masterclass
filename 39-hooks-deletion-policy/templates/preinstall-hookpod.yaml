@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hook-preinstall
+  annotations:
+    "helm.sh/hook": "pre-install"
+    "helm.sh/hook-delete-policy": "before-hook-creation,hook-succeeded"
+spec:
+  restartPolicy: Never
+  containers:
+    - name: hook-preinstall-container
+      image: busybox
+      imagePullPolicy: IfNotPresent
+      command: ["sh", "-c", "echo pre-install hook Pod is running && sleep 5"]
