@@ -1,0 +1,6 @@
+name: "plugin3"
+version: "0.1.0"
+usage: "helm plugin3"
+description: |-
+  Prints Helm plugin directory using script app.sh
+command: "$HELM_PLUGIN_DIR/app.sh"

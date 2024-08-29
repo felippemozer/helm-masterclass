@@ -1,0 +1,16 @@
+name: "plugin2"
+version: "0.1.0"
+usage: "helm plugin2"
+description: |-
+  Prints Helm plugin directory
+command: "echo my helm plugin directory is $HELM_PLUGINS default command"
+platformCommand:
+  - os: linux
+    arch: i386
+    command: "echo my helm plugin directory is $HELM_PLUGINS os is linux i386"
+  - os: linux
+    arch: amd64
+    command: "echo my helm plugin directory is $HELM_PLUGINS os is linux amd64"
+  - os: windows
+    arch: amd64
+    command: "echo my helm plugin directory is $HELM_PLUGINS os is windows"

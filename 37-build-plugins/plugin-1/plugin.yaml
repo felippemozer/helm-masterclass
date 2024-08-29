@@ -1,0 +1,6 @@
+name: "plugin1"
+version: "0.1.0"
+usage: "helm plugin3"
+description: |-
+  Prints Helm Environment Variables
+command: "env"
