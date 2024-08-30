@@ -1,0 +1,32 @@
+{
+    "required": [
+        "replicaCount",
+        "image"
+    ],
+    "type": "object",
+    "properties": {
+        "replicaCount": {
+            "type": "number"
+        },
+        "image": {
+            "type": "object",
+            "properties": {
+                "repository": {
+                    "type": "string"
+                },
+                "pullPolicy": {
+                    "type": "string",
+                    "pattern": "^(Always|IfNotPresent|Never)$"
+                },
+                "tag": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "repository",
+                "pullPolicy",
+                "tag"
+            ]
+        }
+    }
+}
